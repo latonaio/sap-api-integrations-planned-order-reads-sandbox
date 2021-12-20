@@ -146,7 +146,7 @@ type ToProductionOrderItem struct {
 
 ```
 
-#### BASE URL が "api_work_center/srvd_a2x/sap/workcenter/0001" である Planned Order の APIサービス の データレイアウト（=responses）  
+#### BASE URL が "api_plannedorder/srvd_a2x/sap/plannedorder/0001" である Planned Order の APIサービス の データレイアウト（=responses）  
 BASE URL が "api_plannedorder/srvd_a2x/sap/plannedorder/0001" である Planned Order の APIサービス の データレイアウト（=responses）は、例えば、次の通りです。  
 
 ```
@@ -290,5 +290,3 @@ type Header struct {
 }
 
 ```
-
-
