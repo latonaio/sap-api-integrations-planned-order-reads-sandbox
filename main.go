@@ -12,7 +12,7 @@ func main() {
 	fr := sap_api_input_reader.NewFileReader()
 	inoutSDC := fr.ReadSDC("./Inputs//SDC_Planned_Order_Component_Material_Plant_sample.json")
 	caller := sap_api_caller.NewSAPAPICaller(
-		"https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata4/sap/", l, // Planned Order は URL の フォーマットが若干異なる
+		"https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata4/sap/", l,
 	)
 
 	accepter := inoutSDC.Accepter
