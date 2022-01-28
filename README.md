@@ -216,13 +216,13 @@ type Header struct {
 このように、BASE URLが "API_(リポジトリ名)_SRV" のフォーマットである API サービス の データレイアウトと、 Planned Order の データレイアウトは、D、Results、Metadata、Value の配列構造を持っているか持っていないかという点が異なります。  
 
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP 計画手配 の ヘッダデータ が取得された結果の JSON の例です。  
-以下の項目のうち、"PlannedOrder" ～ "SchedulingType" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+以下の項目のうち、"PlannedOrder" ～ "SchedulingType" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-planned-order-reads/SAP_API_Caller/caller.go#L58",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-planned-order-reads/SAP_API_Caller/caller.go#L63",
 	"function": "sap-api-integrations-planned-order-reads/SAP_API_Caller.(*SAPAPICaller).Header",
 	"level": "INFO",
 	"message": [
@@ -286,7 +286,6 @@ type Header struct {
 			"SchedulingType": "2"
 		}
 	],
-	"time": "2021-12-19T20:56:54.196297+09:00"
+	"time": "2022-01-28T15:02:22+09:00"
 }
-
 ```
