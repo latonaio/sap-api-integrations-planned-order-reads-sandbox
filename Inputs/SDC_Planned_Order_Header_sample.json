@@ -45,6 +45,8 @@
 		"FixedSupplier": "",
 		"PurchasingDocument": "",
 		"PurchasingDocumentItem": "",
+		"QuotaArrangement": "",
+		"QuotaArrangementItem": "",
 		"SupplierName": "",
 		"PlannedOrderIsFirm": null,
 		"PlannedOrderIsConvertible": null,
