@@ -151,64 +151,66 @@ BASE URL が "api_plannedorder/srvd_a2x/sap/plannedorder/0001" である Planned
 
 ```
 type Header struct {
-	Value             []struct {
-		PlannedOrder                   string        `json:"PlannedOrder"`
-		PlannedOrderType               string        `json:"PlannedOrderType"`
-		PlannedOrderProfile            string        `json:"PlannedOrderProfile"`
-		Material                       string        `json:"Material"`
-		MaterialName                   string        `json:"MaterialName"`
-		ProductionPlant                string        `json:"ProductionPlant"`
-		MRPPlant                       string        `json:"MRPPlant"`
-		MRPArea                        string        `json:"MRPArea"`
-		ProductionVersion              string        `json:"ProductionVersion"`
-		MaterialProcurementCategory    string        `json:"MaterialProcurementCategory"`
-		MaterialProcurementType        string        `json:"MaterialProcurementType"`
-		StorageLocation                string        `json:"StorageLocation"`
-		BaseUnit                       string        `json:"BaseUnit"`
-		TotalQuantity                  int           `json:"TotalQuantity"`
-		PlndOrderPlannedScrapQty       int           `json:"PlndOrderPlannedScrapQty"`
-		GoodsReceiptQty                int           `json:"GoodsReceiptQty"`
-		IssuedQuantity                 int           `json:"IssuedQuantity"`
-		PlndOrderPlannedStartDate      string        `json:"PlndOrderPlannedStartDate"`
-		PlndOrderPlannedStartTime      string        `json:"PlndOrderPlannedStartTime"`
-		PlndOrderPlannedEndDate        string        `json:"PlndOrderPlannedEndDate"`
-		PlndOrderPlannedEndTime        string        `json:"PlndOrderPlannedEndTime"`
-		PlannedOrderOpeningDate        string        `json:"PlannedOrderOpeningDate"`
-		PlannedOrderLastChangeDateTime string        `json:"PlannedOrderLastChangeDateTime"`
-		ProductionStartDate            string        `json:"ProductionStartDate"`
-		ProductionEndDate              string        `json:"ProductionEndDate"`
-		SalesOrder                     string        `json:"SalesOrder"`
-		SalesOrderItem                 string        `json:"SalesOrderItem"`
-		Customer                       string        `json:"Customer"`
-		WBSElementInternalID           string        `json:"WBSElementInternalID"`
-		WBSElementExternalID           string        `json:"WBSElementExternalID"`
-		WBSDescription                 string        `json:"WBSDescription"`
-		AccountAssignmentCategory      string        `json:"AccountAssignmentCategory"`
-		Reservation                    string        `json:"Reservation"`
-		PlannedOrderLongText           string        `json:"PlannedOrderLongText"`
-		MRPController                  string        `json:"MRPController"`
-		ProductionSupervisor           string        `json:"ProductionSupervisor"`
-		PurchasingGroup                string        `json:"PurchasingGroup"`
-		PurchasingOrganization         string        `json:"PurchasingOrganization"`
-		FixedSupplier                  string        `json:"FixedSupplier"`
-		PurchasingDocument             string        `json:"PurchasingDocument"`
-		PurchasingDocumentItem         string        `json:"PurchasingDocumentItem"`
-		SupplierName                   string        `json:"SupplierName"`
-		PlannedOrderIsFirm             bool          `json:"PlannedOrderIsFirm"`
-		PlannedOrderIsConvertible      bool          `json:"PlannedOrderIsConvertible"`
-		PlannedOrderBOMIsFixed         bool          `json:"PlannedOrderBOMIsFixed"`
-		PlannedOrderCapacityIsDsptchd  bool          `json:"PlannedOrderCapacityIsDsptchd"`
-		CapacityRequirement            string        `json:"CapacityRequirement"`
-		BillOfOperationsVariant        string        `json:"BillOfOperationsVariant"`
-		CapacityRequirementOrigin      string        `json:"CapacityRequirementOrigin"`
-		BillOfOperationsType           string        `json:"BillOfOperationsType"`
-		BillOfOperationsGroup          string        `json:"BillOfOperationsGroup"`
-		LastScheduledDate              string        `json:"LastScheduledDate"`
-		ScheduledBasicEndDate          string        `json:"ScheduledBasicEndDate"`
-		ScheduledBasicEndTime          string        `json:"ScheduledBasicEndTime"`
-		ScheduledBasicStartDate        string        `json:"ScheduledBasicStartDate"`
-		ScheduledBasicStartTime        string        `json:"ScheduledBasicStartTime"`
-		SchedulingType                 string        `json:"SchedulingType"`
+	Value []struct {
+		PlannedOrder                   string `json:"PlannedOrder"`
+		PlannedOrderType               string `json:"PlannedOrderType"`
+		PlannedOrderProfile            string `json:"PlannedOrderProfile"`
+		Material                       string `json:"Material"`
+		MaterialName                   string `json:"MaterialName"`
+		ProductionPlant                string `json:"ProductionPlant"`
+		MRPPlant                       string `json:"MRPPlant"`
+		MRPArea                        string `json:"MRPArea"`
+		ProductionVersion              string `json:"ProductionVersion"`
+		MaterialProcurementCategory    string `json:"MaterialProcurementCategory"`
+		MaterialProcurementType        string `json:"MaterialProcurementType"`
+		StorageLocation                string `json:"StorageLocation"`
+		BaseUnit                       string `json:"BaseUnit"`
+		TotalQuantity                  int    `json:"TotalQuantity"`
+		PlndOrderPlannedScrapQty       int    `json:"PlndOrderPlannedScrapQty"`
+		GoodsReceiptQty                int    `json:"GoodsReceiptQty"`
+		IssuedQuantity                 int    `json:"IssuedQuantity"`
+		PlndOrderPlannedStartDate      string `json:"PlndOrderPlannedStartDate"`
+		PlndOrderPlannedStartTime      string `json:"PlndOrderPlannedStartTime"`
+		PlndOrderPlannedEndDate        string `json:"PlndOrderPlannedEndDate"`
+		PlndOrderPlannedEndTime        string `json:"PlndOrderPlannedEndTime"`
+		PlannedOrderOpeningDate        string `json:"PlannedOrderOpeningDate"`
+		PlannedOrderLastChangeDateTime string `json:"PlannedOrderLastChangeDateTime"`
+		ProductionStartDate            string `json:"ProductionStartDate"`
+		ProductionEndDate              string `json:"ProductionEndDate"`
+		SalesOrder                     string `json:"SalesOrder"`
+		SalesOrderItem                 string `json:"SalesOrderItem"`
+		Customer                       string `json:"Customer"`
+		WBSElementInternalID           string `json:"WBSElementInternalID"`
+		WBSElementExternalID           string `json:"WBSElementExternalID"`
+		WBSDescription                 string `json:"WBSDescription"`
+		AccountAssignmentCategory      string `json:"AccountAssignmentCategory"`
+		Reservation                    string `json:"Reservation"`
+		PlannedOrderLongText           string `json:"PlannedOrderLongText"`
+		MRPController                  string `json:"MRPController"`
+		ProductionSupervisor           string `json:"ProductionSupervisor"`
+		PurchasingGroup                string `json:"PurchasingGroup"`
+		PurchasingOrganization         string `json:"PurchasingOrganization"`
+		FixedSupplier                  string `json:"FixedSupplier"`
+		PurchasingDocument             string `json:"PurchasingDocument"`
+		PurchasingDocumentItem         string `json:"PurchasingDocumentItem"`
+		QuotaArrangement               string `json:"QuotaArrangement"`
+		QuotaArrangementItem           string `json:"QuotaArrangementItem"`
+		SupplierName                   string `json:"SupplierName"`
+		PlannedOrderIsFirm             bool   `json:"PlannedOrderIsFirm"`
+		PlannedOrderIsConvertible      bool   `json:"PlannedOrderIsConvertible"`
+		PlannedOrderBOMIsFixed         bool   `json:"PlannedOrderBOMIsFixed"`
+		PlannedOrderCapacityIsDsptchd  bool   `json:"PlannedOrderCapacityIsDsptchd"`
+		CapacityRequirement            string `json:"CapacityRequirement"`
+		BillOfOperationsVariant        string `json:"BillOfOperationsVariant"`
+		CapacityRequirementOrigin      string `json:"CapacityRequirementOrigin"`
+		BillOfOperationsType           string `json:"BillOfOperationsType"`
+		BillOfOperationsGroup          string `json:"BillOfOperationsGroup"`
+		LastScheduledDate              string `json:"LastScheduledDate"`
+		ScheduledBasicEndDate          string `json:"ScheduledBasicEndDate"`
+		ScheduledBasicEndTime          string `json:"ScheduledBasicEndTime"`
+		ScheduledBasicStartDate        string `json:"ScheduledBasicStartDate"`
+		ScheduledBasicStartTime        string `json:"ScheduledBasicStartTime"`
+		SchedulingType                 string `json:"SchedulingType"`
 	} `json:"value"`
 }
 
@@ -268,6 +270,8 @@ type Header struct {
 			"FixedSupplier": "",
 			"PurchasingDocument": "",
 			"PurchasingDocumentItem": "0",
+			"QuotaArrangement": "",
+			"QuotaArrangementItem": "0",
 			"SupplierName": "",
 			"PlannedOrderIsFirm": true,
 			"PlannedOrderIsConvertible": false,
@@ -286,6 +290,6 @@ type Header struct {
 			"SchedulingType": "2"
 		}
 	],
-	"time": "2022-01-28T15:02:22+09:00"
+	"time": "2022-06-26T10:54:02+09:00"
 }
 ```
